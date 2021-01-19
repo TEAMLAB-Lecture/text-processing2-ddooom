@@ -83,9 +83,9 @@ def to_camel_case(underscore_str):
         elif i != "_" and under_bar:
             under_bar = False
             i = i.upper()
-        else:
+        elif "_" in string:
             i = i.lower()
-            
+
         camelcase_str += i
     
     return camelcase_str
